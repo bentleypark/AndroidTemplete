@@ -15,5 +15,5 @@ class TimberInitializer : Initializer<Unit> {
     }
 
     override fun dependencies(): List<Class<out Initializer<*>>> =
-        emptyList()
+        listOf(StheoInitializer::class.java)
 }
