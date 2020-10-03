@@ -23,7 +23,7 @@
             android:exported="false"
             tools:node="merge">
             <meta-data
-                android:name="com.bentley.androidtemplete.TimberInitializer"
+                android:name="com.bentley.common.initializer.TimberInitializer"
                 android:value="androidx.startup" />
         </provider>
     </application>
