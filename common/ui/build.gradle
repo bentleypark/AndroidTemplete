@@ -49,5 +49,5 @@ dependencies {
 
     // Debug
     implementation Libs.timber
-    implementation Libs.sentry
+//    implementation Libs.sentry
 }
