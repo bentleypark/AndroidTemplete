@@ -1,1 +1,0 @@
-/Users/bentley/Desktop/bentley/dev/androidProject/AndroidTemplete/buildSrc/build/classes/kotlin/main/Config.class:/Users/bentley/Desktop/bentley/dev/androidProject/AndroidTemplete/buildSrc/build/classes/kotlin/main/Libs.class:/Users/bentley/Desktop/bentley/dev/androidProject/AndroidTemplete/buildSrc/build/classes/kotlin/main/Versions.class

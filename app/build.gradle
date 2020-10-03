@@ -41,10 +41,19 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation project(":base")
+
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
     implementation Libs.coreKtx
     implementation Libs.constraintlayout
+
+    // JetPack
+    implementation Libs.startUp
+
+    // Debug
+    implementation Libs.timber
+
     testImplementation Libs.junit4
     androidTestImplementation Libs.junitExt
     androidTestImplementation Libs.espressoCore
