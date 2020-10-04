@@ -29,6 +29,10 @@ object Libs {
     const val coroutineCore =
         "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.androidVersion}"
 
+    // rx java
+    const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJavaVersion}"
+    const val rxAndroid ="io.reactivex.rxjava2:rxandroid:${Versions.rxAndroidVersion}"
+
     // AndroidX
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
     const val constraintlayout =
