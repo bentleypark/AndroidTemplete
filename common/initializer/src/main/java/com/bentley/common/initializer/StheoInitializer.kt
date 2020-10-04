@@ -3,6 +3,7 @@ package com.bentley.common.initializer
 import android.content.Context
 import androidx.startup.Initializer
 import com.bentley.common.BuildConfig
+import com.facebook.stetho.Stetho
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import okhttp3.OkHttpClient
 
@@ -12,6 +13,7 @@ class StheoInitializer : Initializer<Unit> {
             OkHttpClient.Builder()
                 .addNetworkInterceptor(StethoInterceptor())
                 .build()
+            Stetho.initializeWithDefaults(context)
         }
     }
 

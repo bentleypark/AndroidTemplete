@@ -1,9 +1,7 @@
 package com.bentley.common.base
 
-import io.sentry.Sentry
 import retrofit2.Response
 import timber.log.Timber
-import java.lang.Exception
 
 open class BaseRepository {
 
@@ -18,7 +16,7 @@ open class BaseRepository {
             }
             is Result.Error -> {
                 Timber.e("Repository, $errorMessage & Exception - ${result.exception}")
-                Sentry.captureException(Exception(" $errorMessage & Exception - ${result.exception}"))
+//                Sentry.captureException(Exception(" $errorMessage & Exception - ${result.exception}"))
                 null
             }
         }
