@@ -17,6 +17,10 @@ object Versions {
     // Coroutines
     const val androidVersion = "1.3.9"
 
+    // RxJava
+    const val rxJavaVersion = "2.2.19"
+    const val rxAndroidVersion = "2.1.1"
+
     const val junitVersion = "4.13"
 
     // AndroidX

@@ -44,6 +44,10 @@ dependencies {
     implementation Libs.coroutineAndroid
     implementation Libs.coroutineCore
 
+    // RxJava
+    implementation Libs.rxJava
+    implementation Libs.rxAndroid
+
     // Square
     implementation Libs.retrofit
 
