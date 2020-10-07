@@ -1,6 +1,6 @@
 object Versions {
 
-    const val buildGradleVersion = "4.0.1"
+    const val buildGradleVersion = "4.0.2"
     const val protobufGradleVersion = "0.8.13"
     const val googleServiceVersion = "4.3.3"
     const val firebaseCrashlyticsGradleVersion = "2.2.0"
@@ -25,7 +25,7 @@ object Versions {
 
     // AndroidX
     const val appCompatVersion = "1.2.0"
-    const val constraintLayoutVersion = "2.0.1"
+    const val constraintLayoutVersion = "2.0.2"
     const val coreKtxVersion = "1.3.2"
     const val legacySupportVersion = "1.0.0"
     const val activityVersion = "1.1.0"
@@ -102,4 +102,7 @@ object Versions {
 
     // Klint
     const val klintVersion = "0.39.0"
+
+    // Koin
+    const val koinVersion = "2.1.6"
 }

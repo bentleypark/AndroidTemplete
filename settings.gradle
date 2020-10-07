@@ -1,5 +1,5 @@
 include ':common:ui'
-include ':common:initializer'
+include ':common:di'
 include ':common:utils'
 include ':app'
 rootProject.name = "Android Templete"

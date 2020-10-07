@@ -46,7 +46,8 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(Modules.commonUi)
-    implementation project(Modules.commonInitializer)
+    implementation project(Modules.commonDI)
+    implementation project(Modules.commonUtils)
 
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
@@ -58,6 +59,9 @@ dependencies {
 
     // Debug
     implementation Libs.timber
+
+    // Koin
+    implementation Libs.koinViewModel
 
     testImplementation Libs.junit4
     androidTestImplementation Libs.junitExt

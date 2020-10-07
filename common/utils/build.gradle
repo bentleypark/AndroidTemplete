@@ -41,9 +41,17 @@ dependencies {
     implementation Libs.appcompat
     implementation Libs.coreKtx
 
+    // JetPack
+    implementation Libs.startUp
+
     // Google
     implementation Libs.gson
 
+    // Square
+    implementation Libs.okhttp
+
     // Debug
     implementation Libs.timber
+    implementation Libs.stetho
+    implementation Libs.stethoOkhttp3
 }
