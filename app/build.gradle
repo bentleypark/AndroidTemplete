@@ -68,6 +68,7 @@ dependencies {
 
     // Debug
     implementation Libs.timber
+    debugImplementation Libs.leakcanary
 
     // Koin
     implementation Libs.koinViewModel

@@ -69,7 +69,7 @@ object Versions {
     const val retrofitVersion = "2.9.0"
     const val moshiVersion = "1.10.0"
     const val okhttp3Version = "4.9.0"
-    const val leakcanaryVersion = "2.4"
+    const val leakcanaryVersion = "2.5"
 
     // RxBinding
     const val rxbindingVersion = "3.1.0"
