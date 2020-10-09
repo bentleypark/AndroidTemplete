@@ -37,17 +37,10 @@ android {
 }
 
 dependencies {
+    implementation project(Modules.commonUtils)
+
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
 
-    // Square
-    implementation Libs.okhttp
-
-    // JetPack
-    implementation Libs.startUp
-
-    // Debug
-    implementation Libs.timber
-    implementation Libs.stetho
-    implementation Libs.stethoOkhttp3
+    implementation Libs.koinViewModel
 }

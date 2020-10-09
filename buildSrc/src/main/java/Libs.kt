@@ -182,4 +182,7 @@ object Libs {
 
     // Klint
     const val klint = "com.pinterest:ktlint:${Versions.klintVersion}"
+
+    // Koin
+    const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koinVersion}"
 }

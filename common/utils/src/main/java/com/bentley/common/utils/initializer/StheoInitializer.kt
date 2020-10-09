@@ -1,4 +1,4 @@
-package com.bentley.common.initializer
+package com.bentley.common.utils.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
