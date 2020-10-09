@@ -6,6 +6,7 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
 }
 
 apply from: "${rootProject.projectDir}/flavors.gradle"
@@ -73,4 +74,8 @@ dependencies {
     testImplementation Libs.junit4
     androidTestImplementation Libs.junitExt
     androidTestImplementation Libs.espressoCore
+}
+
+kapt {
+    useBuildCache = true
 }
