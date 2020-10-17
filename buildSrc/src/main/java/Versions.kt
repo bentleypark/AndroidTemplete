@@ -1,6 +1,6 @@
 object Versions {
 
-    const val buildGradleVersion = "4.0.2"
+    const val buildGradleVersion = "4.1.0"
     const val protobufGradleVersion = "0.8.13"
     const val googleServiceVersion = "4.3.3"
     const val firebaseCrashlyticsGradleVersion = "2.2.0"
