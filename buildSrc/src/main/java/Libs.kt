@@ -20,6 +20,8 @@ object Libs {
     const val detektGradle =
         "io.gitlab.arturbosch.detekt:detekt-gradle-plugin:${Versions.detektGradleVersion}"
 
+    const val hiltPlugin =  "com.google.dagger:hilt-android-gradle-plugin:${Versions.hiltVersion}"
+
     // Kotlin
     const val kotlinStdLib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlinVersion}"
 
@@ -185,4 +187,11 @@ object Libs {
 
     // Koin
     const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koinVersion}"
+
+    // Hilt
+    const val hiltAndroid =  "com.google.dagger:hilt-android:${Versions.hiltVersion}"
+    const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hiltVersion}"
+
+    const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hiltViewmodels}"
+    const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hiltViewmodels}"
 }

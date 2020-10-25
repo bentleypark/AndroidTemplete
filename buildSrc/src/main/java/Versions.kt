@@ -106,4 +106,8 @@ object Versions {
 
     // Koin
     const val koinVersion = "2.1.6"
+
+    // Hilt
+    const val hiltVersion = "2.29.1-alpha"
+    const val hiltViewmodels = "1.0.0-alpha02"
 }

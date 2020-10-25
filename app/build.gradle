@@ -6,11 +6,13 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
-    id 'kotlin-kapt'
+//    id 'kotlin-kapt'
     id 'com.github.ben-manes.versions' version "0.33.0"
 }
 
 apply from: "${rootProject.projectDir}/flavors.gradle"
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
 
 android {
     compileSdkVersion Config.compileSdkVersion
@@ -57,11 +59,15 @@ dependencies {
     implementation project(Modules.commonUi)
     implementation project(Modules.commonDI)
     implementation project(Modules.commonUtils)
+    implementation project(Modules.data)
 
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
     implementation Libs.coreKtx
     implementation Libs.constraintlayout
+    implementation Libs.activityKtx
+
+    implementation Libs.viewModel
 
     // JetPack
     implementation Libs.startUp
@@ -73,13 +79,20 @@ dependencies {
     // Koin
     implementation Libs.koinViewModel
 
+    implementation Libs.hiltAndroid
+    implementation Libs.hiltViewModel
+    kapt Libs.hiltAndroidCompiler
+    kapt Libs.hiltCompiler
+    kapt 'com.squareup:javapoet:1.13.0'
+
     testImplementation Libs.junit4
     androidTestImplementation Libs.junitExt
     androidTestImplementation Libs.espressoCore
 }
 
 kapt {
-    useBuildCache = true
+//    useBuildCache = true
+    correctErrorTypes true
 }
 
 def isNonStable = { String version ->

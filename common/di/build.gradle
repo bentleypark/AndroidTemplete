@@ -1,6 +1,8 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
 
 android {
     compileSdkVersion 30
@@ -35,12 +37,26 @@ android {
         disable 'UnsafeExperimentalUsageError', 'UnsafeExperimentalUsageWarning', 'ContentDescription'
     }
 }
+kapt {
+//    useBuildCache = true
+    correctErrorTypes true
+}
 
 dependencies {
     implementation project(Modules.commonUtils)
+    implementation project(Modules.data)
 
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
 
+    implementation Libs.retrofit
+    implementation Libs.gsonConverter
+
     implementation Libs.koinViewModel
+
+    implementation Libs.hiltAndroid
+    implementation Libs.hiltViewModel
+    kapt Libs.hiltAndroidCompiler
+    kapt Libs.hiltCompiler
+    kapt 'com.squareup:javapoet:1.13.0'
 }
