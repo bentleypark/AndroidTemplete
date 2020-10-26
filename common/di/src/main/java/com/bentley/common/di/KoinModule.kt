@@ -11,7 +11,7 @@ object KoinModule {
         startKoin {
             androidLogger(Level.ERROR)
             androidContext(context)
-            modules(listOf(logModule))
+            modules(listOf(logModule, networkModule, repositoryModule))
         }
     }
 }

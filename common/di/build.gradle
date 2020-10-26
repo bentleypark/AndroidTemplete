@@ -38,9 +38,16 @@ android {
 
 dependencies {
     implementation project(Modules.commonUtils)
+    implementation project(Modules.data)
 
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
+
+    implementation Libs.retrofit
+    implementation Libs.gson
+    implementation Libs.gsonConverter
+    implementation Libs.okhttp
+    implementation Libs.loggingInterceptor
 
     implementation Libs.koinViewModel
 }
