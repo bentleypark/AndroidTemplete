@@ -2,7 +2,7 @@ package com.bentley.common.utils.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
-import com.bentley.common.BuildConfig
+import com.bentley.common.utils.BuildConfig
 import timber.log.Timber
 
 class TimberInitializer : Initializer<Unit> {

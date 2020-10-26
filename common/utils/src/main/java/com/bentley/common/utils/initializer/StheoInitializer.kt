@@ -2,7 +2,7 @@ package com.bentley.common.utils.initializer
 
 import android.content.Context
 import androidx.startup.Initializer
-import com.bentley.common.BuildConfig
+import com.bentley.common.utils.BuildConfig
 import com.facebook.stetho.Stetho
 import com.facebook.stetho.okhttp3.StethoInterceptor
 import okhttp3.OkHttpClient
