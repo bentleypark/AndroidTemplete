@@ -3,9 +3,13 @@ package com.bentley.androidtemplete
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.lifecycle.Observer
 import com.bentley.androidtemplete.databinding.ActivityMainBinding
 import com.bentley.common.ex.viewBinding
+import com.bentley.data.model.Blog
+import com.bentley.data.state.DataState
 import dagger.hilt.android.AndroidEntryPoint
+import timber.log.Timber
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -19,5 +23,14 @@ class MainActivity : AppCompatActivity() {
 
         binding.tvTitle.text = "View Binding"
         viewModel.setStateEvent(MainStateEvent.GetBlogsEvent)
+
+        viewModel.dataState.observe(this,
+            { dataState ->
+                when (dataState) {
+                    is DataState.Success<List<Blog>> -> {
+                        Timber.d(dataState.data.size.toString())
+                    }
+                }
+            })
     }
 }

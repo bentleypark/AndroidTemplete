@@ -72,6 +72,13 @@ dependencies {
     // JetPack
     implementation Libs.startUp
 
+    // Square
+    implementation Libs.retrofit
+    implementation Libs.gson
+    implementation Libs.gsonConverter
+    implementation Libs.okhttp
+    implementation Libs.loggingInterceptor
+
     // Debug
     implementation Libs.timber
     debugImplementation Libs.leakcanary
@@ -91,7 +98,7 @@ dependencies {
 }
 
 kapt {
-//    useBuildCache = true
+    useBuildCache = true
     correctErrorTypes true
 }
 

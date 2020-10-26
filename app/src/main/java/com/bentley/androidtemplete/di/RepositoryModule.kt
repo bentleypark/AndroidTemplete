@@ -1,4 +1,4 @@
-package com.bentley.common.di
+package com.bentley.androidtemplete.di
 
 import com.bentley.data.api.ApiService
 import com.bentley.data.api.NetworkMapper
