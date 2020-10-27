@@ -57,11 +57,23 @@ dependencies {
     implementation project(Modules.commonUi)
     implementation project(Modules.commonDI)
     implementation project(Modules.commonUtils)
+    implementation project(Modules.data)
 
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
     implementation Libs.coreKtx
     implementation Libs.constraintlayout
+
+    implementation Libs.viewModel
+
+    implementation Libs.coroutineAndroid
+    implementation Libs.coroutineCore
+
+    implementation Libs.retrofit
+    implementation Libs.gson
+    implementation Libs.gsonConverter
+    implementation Libs.okhttp
+    implementation Libs.loggingInterceptor
 
     // JetPack
     implementation Libs.startUp

@@ -1,0 +1,2 @@
+com/bentley/data/BuildConfig.java
+ com.bentley.data.BuildConfig

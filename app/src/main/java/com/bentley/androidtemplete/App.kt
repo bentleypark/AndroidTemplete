@@ -1,7 +1,7 @@
 package com.bentley.androidtemplete
 
 import android.app.Application
-import com.bentley.common.di.KoinModule
+import com.bentley.androidtemplete.di.KoinModule
 
 class App : Application() {
 
