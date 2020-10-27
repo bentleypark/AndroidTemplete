@@ -7,7 +7,7 @@ import org.koin.dsl.module
 
 val networkModule = module {
 
-    factory {
+    single {
         provideOkHttp()
     }
     single {

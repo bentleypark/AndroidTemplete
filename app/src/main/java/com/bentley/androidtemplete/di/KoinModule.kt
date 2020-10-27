@@ -9,9 +9,17 @@ import org.koin.core.logger.Level
 object KoinModule {
     fun setupKoin(context: Context) {
         startKoin {
-            androidLogger(Level.ERROR)
+            androidLogger(Level.DEBUG)
             androidContext(context)
-            modules(listOf(logModule, networkModule, repositoryModule, viewModelModule))
+            modules(
+                listOf(
+                    logModule,
+                    networkModule,
+                    repositoryModule,
+                    viewModelModule,
+                    fragmentModule
+                )
+            )
         }
     }
 }

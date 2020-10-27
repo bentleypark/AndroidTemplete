@@ -83,6 +83,8 @@ dependencies {
     debugImplementation Libs.leakcanary
 
     // Koin
+    implementation Libs.koin
+    implementation Libs.koinFragment
     implementation Libs.koinViewModel
 
     testImplementation Libs.junit4

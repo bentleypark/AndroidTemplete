@@ -6,6 +6,7 @@ import com.bentley.androidtemplete.databinding.ActivityMainBinding
 import com.bentley.common.ex.viewBinding
 import com.bentley.data.model.Blog
 import com.bentley.data.state.DataState
+import org.koin.androidx.fragment.android.setupKoinFragmentFactory
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import timber.log.Timber
 
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setupKoinFragmentFactory()
         setContentView(binding.root)
 
         binding.tvTitle.text = "View Binding"

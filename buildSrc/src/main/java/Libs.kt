@@ -31,7 +31,7 @@ object Libs {
 
     // rx java
     const val rxJava = "io.reactivex.rxjava2:rxjava:${Versions.rxJavaVersion}"
-    const val rxAndroid ="io.reactivex.rxjava2:rxandroid:${Versions.rxAndroidVersion}"
+    const val rxAndroid = "io.reactivex.rxjava2:rxandroid:${Versions.rxAndroidVersion}"
 
     // AndroidX
     const val appcompat = "androidx.appcompat:appcompat:${Versions.appCompatVersion}"
@@ -184,5 +184,8 @@ object Libs {
     const val klint = "com.pinterest:ktlint:${Versions.klintVersion}"
 
     // Koin
+    const val koin = "org.koin:koin-android:${Versions.koinVersion}"
+    const val koinFragment = "org.koin:koin-androidx-fragment:${Versions.koinVersion}"
+    const val koinScope = "org.koin:koin-android-scope:${Versions.koinVersion}"
     const val koinViewModel = "org.koin:koin-androidx-viewmodel:${Versions.koinVersion}"
 }
