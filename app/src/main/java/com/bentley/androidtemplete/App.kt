@@ -1,7 +1,6 @@
 package com.bentley.androidtemplete
 
 import android.app.Application
-import com.bentley.common.di.KoinModule
 import dagger.hilt.android.HiltAndroidApp
 
 @HiltAndroidApp
