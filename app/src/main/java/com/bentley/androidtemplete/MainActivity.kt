@@ -20,8 +20,6 @@ class MainActivity : AppCompatActivity() {
         setupKoinFragmentFactory()
         setContentView(binding.root)
 
-        binding.tvTitle.text = "View Binding"
-
         viewModel.setStateEvent(MainStateEvent.GetBlogsEvent)
 
         viewModel.dataState.observe(this,

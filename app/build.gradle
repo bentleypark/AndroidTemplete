@@ -55,7 +55,6 @@ android {
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation project(Modules.commonUi)
-    implementation project(Modules.commonDI)
     implementation project(Modules.commonUtils)
     implementation project(Modules.data)
 
@@ -77,9 +76,17 @@ dependencies {
 
     // JetPack
     implementation Libs.startUp
+    implementation Libs.navUi
+    implementation Libs.navUiKtx
+    implementation Libs.navFragment
+    implementation Libs.navFragmentKtx
 
     // Debug
     implementation Libs.timber
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     debugImplementation Libs.leakcanary
 
     // Koin
