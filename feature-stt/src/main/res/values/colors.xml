@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_background">#FFFFFF</color>
+    <color name="splash_text_color">#9b9b9b</color>
+
+    <color name="colorPrimary">#2e2e33</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#4285f4</color>
+
+    <color name="mainViewBackgroundColor">#1A1A1C</color>
+
+    <color name="final_color">#9b9b9b</color>
+    <color name="interim_color">#FFFFFF</color>
+
+    <color name="dialog_title">#de000000</color>
+    <color name="dialog_text">#8a000000</color>
+    <color name="dialog_button_text">#4285f4</color>
+    <color name="dialog_button_pressed">#4c4285f4</color>
+
+    <color name="update_progressbar">#4285f4</color>
+    <color name="btn_register_disable_color">#807fafff</color>
+
+    <color name="booster_dialog_background">#27272a</color>
+    <color name="dialog_primary_color">#37373e</color>
+    <color name="selected_subject_button_text_color">#d4d4d4</color>
+    <color name="booster_dialog_border_view_color">#1e000000</color>
+    <color name="booster_dialog_into_text_color">#61ffffff</color>
+    <color name="booster_dialog_btn_disable_color">#34568E</color>
+    <color name="booster_dialog_btn_not_apply_color">#ad3e3e</color>
+
+    <color name="text_interim_current_background">#64abff</color>
+
+    <color name="setting_dialog_scroll_color">#636363</color>
+
+    <color name="chat_message_time_text_color">#61ffffff</color>
+    <color name="black">#000000</color>
+
+    <color name="tab_indicator_current_color">#828995</color>
+
+    <color name="user_info_spinner_ripple">#807fafff</color>
+
+    <color name="scroll_down_tint_color">#64abff</color>
+
+    <color name="network_warning_view_background">#9f2635</color>
+
+    <color name="notice_dialog_title_color">#de000000</color>
+    <color name="notice_dialog_content_color">#8a000000</color>
+
+    <color name="holiday_decorator_color">#ff8484</color>
+
+    <color name="script_content_text_color">#b3ffffff</color>
+    <color name="script_timestamp_text_color">#80ffffff</color>
+
+    <color name="support_menu_border_color">#27272a</color>
+</resources>

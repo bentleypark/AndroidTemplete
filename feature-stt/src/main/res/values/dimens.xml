@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="booster_setting_dialog_marginStart">24dp</dimen>
+    <dimen name="booster_setting_dialog_marginEnd">24dp</dimen>
+    <dimen name="fragment_dialog_btn_close_size">25dp</dimen>
+
+    <dimen name="booster_setting_dialog_toggle_button_group_maringTop">60dp</dimen>
+    <dimen name="booster_setting_dialog_toggle_button_group_maringEnd">12dp</dimen>
+    <dimen name="booster_setting_dialog_toggle_button_minWidth">65dp</dimen>
+    <dimen name="booster_setting_dialog_toggle_button_textSize">14sp</dimen>
+    <dimen name="booster_setting_dialog_selected_subject_detail_layout_height">85dp</dimen>
+    <dimen name="booster_setting_dialog_selected_subject_detail_layout_marinBottom">70dp</dimen>
+    <dimen name="booster_setting_dialog_title_marginTop">18dp</dimen>
+    <dimen name="booster_setting_dialog_iv_user_marginTop">45dp</dimen>
+    <dimen name="booster_setting_dialog_iv_user_marginStart">115dp</dimen>
+    <dimen name="booster_dialog_tv_guide_title_marginStart">12dp</dimen>
+    <dimen name="booster_dialog_tv_guide_title_marginTop">42dp</dimen>
+    <dimen name="booster_dialog_tv_guide_title_marginBottom">32dp</dimen>
+    <dimen name="booster_setting_dialog_spinner_layout_marginStart">82dp</dimen>
+    <dimen name="booster_setting_dialog_spinner_school_layout_marginTop">32dp</dimen>
+    <dimen name="booster_setting_dialog_spinner_layout_marginEnd">50dp</dimen>
+    <dimen name="booster_setting_dialog_spinner_school_margin">3dp</dimen>
+    <dimen name="booster_setting_dialog_spinner_level_layout_marginTop">12dp</dimen>
+    <dimen name="booster_setting_spinner_level_margin">3dp</dimen>
+    <dimen name="booster_setting_btn_modified_complete_marginTop">24dp</dimen>
+
+    <dimen name="booster_dialog_booster_dialog_title_marginTop">18dp</dimen>
+    <dimen name="booster_dialog_boarder_view_width">0dp</dimen>
+    <dimen name="booster_dialog_boarder_view_height">1dp</dimen>
+    <dimen name="booster_dialog_tv_user_marginStart">8dp</dimen>
+    <dimen name="booster_dialog_tv_user_info_marginEnd">12dp</dimen>
+    <dimen name="booster_dialog_iv_info_marginTop">27dp</dimen>
+    <dimen name="booster_dialog_tv_info_marginStart">4dp</dimen>
+    <dimen name="booster_dialog_decentant_subject_item_marginVertical">4dp</dimen>
+    <dimen name="booster_dialog_decentant_subject_item_marginHorizontal">4dp</dimen>
+    <dimen name="booster_dialog_btn_apply_marginTop">16dp</dimen>
+    <dimen name="booster_dialog_btn_apply_marginBottom">8dp</dimen>
+
+    <dimen name="main_fragment_bottom_menu__btn_width">24dp</dimen>
+    <dimen name="main_fragment_bottom_menu__btn_height">40dp</dimen>
+    <dimen name="main_fragment_btn_booster_width">34dp</dimen>
+    <dimen name="main_fragment_scrollview_padding">20dp</dimen>
+    <dimen name="main_fragment_scrollview_top_padding">5dp</dimen>
+
+    <dimen name="progress_circular_inside_btn_size">20dp</dimen>
+    <dimen name="circular_progress_size">44dp</dimen>
+
+    <dimen name="activity_toolbar_title_size">16sp</dimen>
+    <dimen name="activity_toolbar_height">48dp</dimen>
+
+    <dimen name="activity_image_player_close_btn_size">40dp</dimen>
+    <dimen name="activity_image_player_close_btn_margin">30dp</dimen>
+
+    <dimen name="activity_info_recyclerview_margin">24dp</dimen>
+
+    <dimen name="activity_license_component_marginTop">24dp</dimen>
+    <dimen name="activity_license_textInputLayout_marginTop">48dp</dimen>
+    <dimen name="activity_license_textInputLayout_boxStrokeWidth">1dp</dimen>
+
+    <dimen name="activity_main_network_warning_view_iv_marginTop">10dp</dimen>
+    <dimen name="activity_main_network_warning_view_iv_marginEnd">3dp</dimen>
+    <dimen name="activity_main_network_warning_view_height">36dp</dimen>
+
+    <dimen name="activity_media_player_close_btn_size">35dp</dimen>
+    <dimen name="activity_media_player_close_btn_margin">30dp</dimen>
+
+    <dimen name="activity_onboarding_component_margin">24dp</dimen>
+    <dimen name="activity_onboarding_btn_skip_marginBottom">12dp</dimen>
+    <dimen name="activity_onboarding_tab_indicator_marginBottom">4dp</dimen>
+    <dimen name="activity_onboarding_tab_indicator_width">100dp</dimen>
+    <dimen name="activity_onboarding_tab_indicator_height">35dp</dimen>
+    <dimen name="activity_onboarding_tab_indicator_component_size">8dp</dimen>
+    <dimen name="activity_onboarding_tab_indicator_component_margin">5dp</dimen>
+
+    <dimen name="activity_splash_iv_logo_marginBottom">30dp</dimen>
+    <dimen name="activity_splash_tv_version_info_marginBottom">8dp</dimen>
+
+    <dimen name="activity_update_install_progress_width">400dp</dimen>
+    <dimen name="activity_update_install_progress_height">5dp</dimen>
+    <dimen name="activity_update_install_progress_marginTop">130dp</dimen>
+    <dimen name="activity_update_tv_component_marginBottom">12dp</dimen>
+    <dimen name="activity_update_tv_update_progress_marginEnd">8dp</dimen>
+    <dimen name="activity_update_tv_update_guide_message_marginTop">24dp</dimen>
+
+    <dimen name="activity_userinfo_component_marginTop">24dp</dimen>
+    <dimen name="activity_userinfo_spinner_layout_width">285dp</dimen>
+    <dimen name="activity_userinfo_spinner_layout_height">56dp</dimen>
+    <dimen name="activity_userinfo_spinner_school_margin">3dp</dimen>
+    <dimen name="activity_userinfo_spinner_glade_layout_marginTop">12dp</dimen>
+    <dimen name="activity_userinfo_btn_complete_padding">8dp</dimen>
+
+    <dimen name="custom_tab_item_with_badge_layout_width">150dp</dimen>
+    <dimen name="custom_tab_item_with_badge_layout_height">48dp</dimen>
+    <dimen name="custom_tab_item_with_badge_iv_tab_item_img_marginStart">36dp</dimen>
+    <dimen name="custom_tab_item_with_badge_iv_tab_item_img_marginEnd">96dp</dimen>
+    <dimen name="custom_tab_item_with_badge_component_marginStart">8dp</dimen>
+    <dimen name="custom_tab_item_with_badge_iv_tab_item_badge_size">5dp</dimen>
+    <dimen name="custom_tab_item_with_badge_iv_tab_item_badge_marginBottom">16dp</dimen>
+
+    <dimen name="custom_tab_item_view_width">100dp</dimen>
+    <dimen name="custom_tab_item_view_height">48dp</dimen>
+    <dimen name="custom_tab_item_view_iv_tab_item_img_marginStart">36dp</dimen>
+    <dimen name="custom_tab_item_view_iv_tab_item_img_marginEnd">96dp</dimen>
+    <dimen name="custom_tab_item_view_component_marginStart">8dp</dimen>
+
+    <dimen name="fragment_communication_reyclerview_message_list_margin">8dp</dimen>
+    <dimen name="fragment_communication_layout_chatbox_height">65dp</dimen>
+    <dimen name="fragment_communication_layout_chatbox_marginBottom">50dp</dimen>
+    <dimen name="fragment_communication_edittext_chatbox_margin">12dp</dimen>
+    <dimen name="fragment_communication_button_chatbox_send_marginTop">7dp</dimen>
+    <dimen name="fragment_communication_button_chatbox_send_marginBottom">18dp</dimen>
+    <dimen name="fragment_communication_button_chatbox_send_marginEnd">12dp</dimen>
+
+    <dimen name="fragment_cumstom_guide_rv_custom_guide_list_margin">24dp</dimen>
+    <dimen name="fragment_cumstom_guide_rv_custom_guide_list_marginEnd">12dp</dimen>
+
+    <dimen name="fragment_notice_dialog_tv_title_marginStart">24dp</dimen>
+    <dimen name="fragment_notice_dialog_tv_title_marginTop">21dp</dimen>
+    <dimen name="fragment_notice_dialog_scrollView_marginHorizontal">24dp</dimen>
+    <dimen name="fragment_notice_dialog_scrollView_marginTop">12dp</dimen>
+    <dimen name="fragment_notice_dialog_scrollView_marginBottom">8dp</dimen>
+    <dimen name="fragment_notice_dialog_btn_confirm_size">50dp</dimen>
+    <dimen name="fragment_notice_dialog_btn_confirm_marginEnd">24dp</dimen>
+    <dimen name="fragment_notice_dialog_btn_confirm_marginBottom">16dp</dimen>
+
+    <dimen name="fragment_setting_dialog_title_marginTop">18dp</dimen>
+    <dimen name="fragment_setting_dialog_component_margin">24dp</dimen>
+    <dimen name="fragment_setting_dialog_text_slider_marginBottom">20dp</dimen>
+    <dimen name="fragment_setting_dialog_language_spinner_marginStart">20dp</dimen>
+    <dimen name="fragment_setting_dialog_language_spinner_width">390dp</dimen>
+    <dimen name="fragment_setting_dialog_language_spinner_height">60dp</dimen>
+    <dimen name="fragment_setting_dialog_tv_guide_message_marginTop">8dp</dimen>
+    <dimen name="fragment_setting_dialog_tv_guide_message2_marginTop">12dp</dimen>
+    <dimen name="fragment_setting_dialog_switch_marginTop">32dp</dimen>
+    <dimen name="fragment_setting_dialog_switch_marginEnd">20dp</dimen>
+    <dimen name="fragment_setting_dialog_switch_guide_message_marginTop">12dp</dimen>
+
+    <dimen name="fragment_support_support_list_marginTop">10dp</dimen>
+
+    <dimen name="fragment_translation_text_final_marginTop">20dp</dimen>
+    <dimen name="fragment_translation_text_final_paddingBottom">5dp</dimen>
+    <dimen name="fragment_translation_text_interim_paddingBottom">65dp</dimen>
+    <dimen name="fragment_translation_text_interim_current_scroll_height">72dp</dimen>
+    <dimen name="fragment_translation_text_interim_current_scroll_padding">10dp</dimen>
+    <dimen name="fragment_translation_btn_scroll_down_marginEnd">12dp</dimen>
+    <dimen name="fragment_translation_bottomMenu_height">72dp</dimen>
+    <dimen name="fragment_translation_btn_translate_marginTop">10dp</dimen>
+    <dimen name="fragment_translation_btn_marginStart">25dp</dimen>
+    <dimen name="fragment_translation_translationAnimationView_size">40dp</dimen>
+    <dimen name="fragment_translation_translationAnimationView_marginStart">30dp</dimen>
+    <dimen name="fragment_translation_translationAnimationView_marginTop">5dp</dimen>
+    <dimen name="fragment_translation_iv_booster_img_marginStart">90dp</dimen>
+    <dimen name="fragment_translation_iv_booster_img_marginTop">18dp</dimen>
+    <dimen name="fragment_translation_iv_booster_title_marginStart">5dp</dimen>
+
+    <dimen name="fragment_library_bottom_button_height">60dp</dimen>
+    <dimen name="fragment_library_bottom_button_marginTop">5dp</dimen>
+    <dimen name="fragment_library_upper_button_marginStart">24dp</dimen>
+    <dimen name="fragment_library_upper_button_marginStart2">30dp</dimen>
+
+    <dimen name="library_menu_button_size">25dp</dimen>
+    <dimen name="library_menu_button_width_size">23.5dp</dimen>
+
+</resources>

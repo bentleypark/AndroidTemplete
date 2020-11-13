@@ -12,5 +12,7 @@ include ':common:ui'
 include ':common:utils'
 include ':app'
 include ':data'
+include ':feature-stt'
+include ':resources'
 rootProject.name = "Android Templete"
 

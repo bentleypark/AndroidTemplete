@@ -1,7 +1,7 @@
 object Versions {
 
     // Class Path for Plugin
-    const val buildGradleVersion = "4.1.0"
+    const val buildGradleVersion = "4.1.1"
     const val protobufGradleVersion = "0.8.13"
     const val googleServiceVersion = "4.3.3"
     const val firebaseCrashlyticsGradleVersion = "2.2.0"
@@ -16,13 +16,13 @@ object Versions {
     const val kotlinVersion = "1.4.10"
 
     // Coroutines
-    const val androidVersion = "1.4.0"
+    const val androidVersion = "1.4.1"
 
     // RxJava
-    const val rxJavaVersion = "2.2.19"
+    const val rxJavaVersion = "2.2.20"
     const val rxAndroidVersion = "2.1.1"
 
-    const val junitVersion = "4.13"
+    const val junitVersion = "4.13.1"
 
     // AndroidX
     const val appCompatVersion = "1.2.0"
@@ -41,7 +41,7 @@ object Versions {
     const val lifeCycleVersion = "2.2.0"
     const val roomVersion = "2.2.5"
     const val navigationVersion = "2.3.1"
-    const val startupVersion = "1.0.0-beta01"
+    const val startupVersion = "1.0.0"
 
     const val testVersion = "1.3.0"
     const val espressoVersion = "3.3.0"
@@ -105,5 +105,5 @@ object Versions {
     const val klintVersion = "0.39.0"
 
     // Koin
-    const val koinVersion = "2.1.6"
+    const val koinVersion = "2.2.0"
 }

@@ -1,13 +1,10 @@
-//apply plugin: 'com.android.application'
-//apply plugin: 'kotlin-android'
-//apply plugin: 'kotlin-android-extensions'
 // https://docs.gradle.org/current/userguide/plugins.html
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-android-extensions'
     id 'kotlin-kapt'
-    id 'com.github.ben-manes.versions' version "0.33.0"
+    id 'com.github.ben-manes.versions' version "0.36.0"
 }
 
 apply from: "${rootProject.projectDir}/flavors.gradle"
@@ -57,13 +54,16 @@ dependencies {
     implementation project(Modules.commonUi)
     implementation project(Modules.commonUtils)
     implementation project(Modules.data)
+    implementation project(Modules.featureStt)
+    implementation project(Modules.resources)
 
     implementation Libs.kotlinStdLib
     implementation Libs.appcompat
     implementation Libs.coreKtx
     implementation Libs.constraintlayout
-
+    implementation Libs.liveData
     implementation Libs.viewModel
+    implementation Libs.legacySupport
 
     implementation Libs.coroutineAndroid
     implementation Libs.coroutineCore
@@ -83,10 +83,6 @@ dependencies {
 
     // Debug
     implementation Libs.timber
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
     debugImplementation Libs.leakcanary
 
     // Koin
