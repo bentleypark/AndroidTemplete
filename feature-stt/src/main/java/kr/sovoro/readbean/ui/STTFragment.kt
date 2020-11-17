@@ -59,14 +59,14 @@ class STTFragment : Fragment(),
         setHasOptionsMenu(true)
 
         askMultiplePermissions.launch(permissions)
-        observer = SpeechRecognizerObserver(requireContext())
-        lifecycle.addObserver(observer)
     }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? = initBinding(FragmentSttBinding.inflate(layoutInflater), this) {
+        observer = SpeechRecognizerObserver(requireContext(), binding)
+        lifecycle.addObserver(observer)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -95,12 +95,13 @@ class STTFragment : Fragment(),
 
     companion object {
         fun newInstance() = STTFragment()
-
-        const val REQUEST_CODE_STT = 1
     }
 }
 
-class SpeechRecognizerObserver(private val context: Context) : RecognitionListener,
+class SpeechRecognizerObserver(
+    private val context: Context,
+    private val binding: FragmentSttBinding?
+) : RecognitionListener,
     DefaultLifecycleObserver {
 
     lateinit var speechRecognizer: SpeechRecognizer
@@ -136,11 +137,24 @@ class SpeechRecognizerObserver(private val context: Context) : RecognitionListen
     override fun onResults(results: Bundle?) {
         Timber.d("onResults")
         Timber.d("${results!!.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)}")
+        val result = results.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+        if (result!![0].trim().isNotEmpty()) {
+            binding!!.apply {
+                textFinal.text = ""
+                textFinal.append(result[0])
+            }
+        }
     }
 
     override fun onPartialResults(partialResults: Bundle?) {
         Timber.d("onPartialResults")
         Timber.d("${partialResults!!.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)}")
+        val result = partialResults.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION)
+        if (result!![0].trim().isNotEmpty()) {
+            binding!!.apply {
+                textFinal.text = result[0]
+            }
+        }
     }
 
     override fun onEvent(eventType: Int, params: Bundle?) {
