@@ -53,6 +53,10 @@ dependencies {
     implementation Libs.material
     implementation Libs.constraintlayout
     implementation Libs.fragmentKtx
+    implementation Libs.activityKtx
+    implementation Libs.liveData
+    implementation Libs.viewModel
+    implementation Libs.commonJava8
 
     // Coroutine
     implementation Libs.coroutineAndroid
