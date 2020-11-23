@@ -2,6 +2,7 @@ package com.bentley.androidtemplete.di
 
 import android.content.Context
 import kr.sovoro.readbean.di.sttModule
+import kr.sovoro.readbean.di.ttsModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.androidx.fragment.koin.fragmentFactory
@@ -23,7 +24,8 @@ object KoinModule {
                     repositoryModule,
                     viewModelModule,
                     fragmentModule,
-                    sttModule
+                    sttModule,
+                    ttsModule
                 )
             )
         }

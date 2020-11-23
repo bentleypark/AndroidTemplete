@@ -7,7 +7,7 @@ import android.speech.RecognizerIntent
 import androidx.activity.result.contract.ActivityResultContract
 import java.util.*
 
-class STTAcitivityContract : ActivityResultContract<String, String?>() {
+class TTSAcitivityContract : ActivityResultContract<String, String?>() {
     override fun createIntent(context: Context, input: String?): Intent {
         val sttIntent = Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH).apply {
             putExtra(

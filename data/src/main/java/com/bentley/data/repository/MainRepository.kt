@@ -2,11 +2,12 @@ package com.bentley.data.repository
 
 import com.bentley.data.api.ApiService
 import com.bentley.data.mapper.NetworkMapper
-import com.bentley.data.model.Blog
-import com.bentley.data.state.DataState
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.flow
+import okhttp3.Call
+import okhttp3.Callback
+import okhttp3.Response
+import okhttp3.ResponseBody
+import timber.log.Timber
+import java.io.IOException
 
 class MainRepository
 constructor(
@@ -15,19 +16,23 @@ constructor(
 //    private val cacheMapper: CacheMapper,
     private val networkMapper: NetworkMapper
 ) {
-//    suspend fun getBlogs(): Flow<DataState<List<Blog>>> = flow {
-//        emit(DataState.Loading)
-//        delay(1000)
-//        try {
-//            val networkBlogs = apiService.get()
-//            val blogs = networkMapper.mapFromEntityList(networkBlogs)
-////            for (blog in blogs) {
-////                blogDao.insert(cacheMapper.mapToEntity(blog))
-////            }
-////            val cachedBlogs = blogDao.get()
-//            emit(DataState.Success(blogs))
-//        } catch (e: Exception) {
-//            emit(DataState.Error(e))
-//        }
-//    }
+    fun requestTTS(text: String) {
+        val response = apiService.requestTTS("mijin", text)
+        response.enqueue(object : retrofit2.Callback<ResponseBody> {
+            override fun onFailure(call: retrofit2.Call<ResponseBody>, t: Throwable) {
+                Timber.e(t)
+            }
+
+            override fun onResponse(
+                call: retrofit2.Call<ResponseBody>,
+                response: retrofit2.Response<ResponseBody>
+            ) {
+                if (response.isSuccessful) {
+                    Timber.d("body ${response.body()}")
+                }
+            }
+
+        })
+
+    }
 }

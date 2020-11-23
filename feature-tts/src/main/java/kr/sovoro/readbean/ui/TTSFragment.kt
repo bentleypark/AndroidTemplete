@@ -22,17 +22,17 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 import timber.log.Timber
 import java.util.*
 
-class STTFragment : Fragment(),
+class TTSFragment : Fragment(),
     ViewBindingHolder<FragmentSttBinding> by ViewBindingHolderImpl() {
 
-    private val viewModel: STTViewModel by viewModel()
+    private val viewModel: TTSViewModel by viewModel()
 
     private var isTranslationOngoing = false
     private val permissions = arrayOf(
         Manifest.permission.RECORD_AUDIO
     )
 
-    private val sttAcitivity = registerForActivityResult(STTAcitivityContract()) { result ->
+    private val sttAcitivity = registerForActivityResult(TTSAcitivityContract()) { result ->
         if (result!!.isNotEmpty()) {
             binding!!.apply {
                 textFinal.text = result
@@ -58,7 +58,7 @@ class STTFragment : Fragment(),
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
 
-        askMultiplePermissions.launch(permissions)
+//        askMultiplePermissions.launch(permissions)
     }
 
     override fun onCreateView(
@@ -73,10 +73,12 @@ class STTFragment : Fragment(),
         super.onViewCreated(view, savedInstanceState)
 //        observer.selectImage()
 
-        binding!!.btnTranslate.setOnClickListener {
-//            sttAcitivity.launch("STT Test")
-            observer.speechRecognizer.startListening(createIntent(requireContext()))
-        }
+//        binding!!.btnTranslate.setOnClickListener {
+////            sttAcitivity.launch("STT Test")
+//            observer.speechRecognizer.startListening(createIntent(requireContext()))
+//        }
+
+        viewModel.requestTTS()
     }
 
     private fun createIntent(context: Context): Intent {
@@ -94,7 +96,7 @@ class STTFragment : Fragment(),
     }
 
     companion object {
-        fun newInstance() = STTFragment()
+        fun newInstance() = TTSFragment()
     }
 }
 

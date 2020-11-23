@@ -12,6 +12,8 @@ class AuthInterceptor : Interceptor {
 
         requestBuilder.addHeader("X-NCP-APIGW-API-KEY-ID", "h1m2ubmnh3")
         requestBuilder.addHeader("X-NCP-APIGW-API-KEY", "P88xpx4aW7UXevSZqqYutcO7wxrUJ06KRxSzMfxY")
+        requestBuilder.addHeader("Content-Type", "x-www-form-urlencoded")
+        requestBuilder.addHeader("Content-Type","application/json")
         return chain.proceed(requestBuilder.build())
     }
 }

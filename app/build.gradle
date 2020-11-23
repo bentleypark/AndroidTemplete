@@ -54,6 +54,7 @@ dependencies {
     implementation project(Modules.commonUtils)
     implementation project(Modules.data)
     implementation project(Modules.featureStt)
+    implementation project(Modules.featureTts)
     implementation project(Modules.resources)
 
     implementation Libs.kotlinStdLib
