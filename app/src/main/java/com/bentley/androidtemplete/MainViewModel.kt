@@ -16,21 +16,20 @@ class MainViewModel(private val mainRepository: MainRepository) : ViewModel() {
         get() = _dataState
 
     fun setStateEvent(mainStateEvent: MainStateEvent) {
-        viewModelScope.launch {
-            when (mainStateEvent) {
-                is MainStateEvent.GetBlogsEvent -> {
-                    mainRepository.getBlogs()
-                        .onEach { dataState ->
-                            _dataState.value = dataState
-                        }
-                        .launchIn(viewModelScope)
-                }
-
-                MainStateEvent.None -> {
-                    // who cares
-                }
-            }
-        }
+//        viewModelScope.launch {
+//            when (mainStateEvent) {
+//                is MainStateEvent.GetBlogsEvent -> {
+//                    mainRepository.getBlogs()
+//                        .onEach { dataState ->
+//                            _dataState.value = dataState
+//                        }
+//                        .launchIn(viewModelScope)
+//                }
+//
+//                MainStateEvent.None -> {
+//                    // who cares
+//                }
+//            }
     }
 }
 

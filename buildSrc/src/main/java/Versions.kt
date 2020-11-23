@@ -106,4 +106,7 @@ object Versions {
 
     // Koin
     const val koinVersion = "2.2.1"
+
+    // Plugin
+    const val benManesVersion = "0.36.0"
 }

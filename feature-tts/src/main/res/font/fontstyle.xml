@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ COPYRIGHT © SOVORO 2020 ALL RIGHTS RESERVED
+  -->
+
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <font
+        android:font="@font/regular" />
+</font-family>

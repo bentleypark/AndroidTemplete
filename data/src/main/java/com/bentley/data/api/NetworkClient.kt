@@ -22,19 +22,15 @@ fun logInterceptor(): Interceptor {
 fun provideOkHttp(): OkHttpClient {
     return OkHttpClient.Builder()
         .addNetworkInterceptor(logInterceptor())
-        //.addInterceptor(AuthInterceptor())
+        .addInterceptor(AuthInterceptor())
         .connectTimeout(1, TimeUnit.SECONDS)
         .readTimeout(1, TimeUnit.SECONDS)
         .build()
 }
 
 fun provideRetrofit(client: OkHttpClient): Retrofit {
-//    val gson = GsonBuilder()
-//        .setLenient()
-//        .create()
     return Retrofit.Builder()
         .baseUrl(ApiService.BASE_URL)
-//        .addConverterFactory(GsonConverterFactory.create(gson))
         .addConverterFactory(GsonConverterFactory.create())
         .callFactory { request -> client.newCall(request) }
         .build()

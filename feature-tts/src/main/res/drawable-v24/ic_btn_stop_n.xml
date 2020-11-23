@@ -1,0 +1,9 @@
+<!--
+  ~ COPYRIGHT © SOVORO 2020 ALL RIGHTS RESERVED
+  -->
+
+<vector android:height="50dp" android:viewportHeight="100"
+    android:viewportWidth="100" android:width="50dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#FFF" android:fillType="evenOdd" android:pathData="M50,50m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"/>
+    <path android:fillColor="#4285F4" android:fillType="evenOdd" android:pathData="M36,32L64,32A4,4 0,0 1,68 36L68,64A4,4 0,0 1,64 68L36,68A4,4 0,0 1,32 64L32,36A4,4 0,0 1,36 32z"/>
+</vector>

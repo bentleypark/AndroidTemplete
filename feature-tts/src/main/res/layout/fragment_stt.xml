@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/vertical_guideline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/mainViewBackgroundColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true"
+                android:paddingStart="@dimen/main_fragment_scrollview_padding"
+                android:paddingTop="@dimen/main_fragment_scrollview_top_padding"
+                android:paddingEnd="@dimen/main_fragment_scrollview_padding"
+                android:paddingBottom="@dimen/main_fragment_scrollview_top_padding"
+                android:scrollbarSize="2dp"
+                android:scrollbarThumbVertical="@color/colorPrimary"
+                android:scrollbars="vertical">
+
+                <!-- clickable을 위한 minheight 세팅 (이벤트가 안잡힘) -->
+                <LinearLayout
+                    android:id="@+id/view_inner_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:minHeight="300dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_final"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fragment_translation_text_final_marginTop"
+                        android:layout_marginBottom="0dp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:fontFamily="@font/regular"
+                        android:gravity="top"
+                        android:paddingBottom="@dimen/fragment_translation_text_final_paddingBottom"
+                        android:scrollHorizontally="false"
+                        android:text="@string/initial_default_message"
+                        android:textColor="@color/interim_color"
+                        android:textIsSelectable="true"
+                        android:textSize="36sp" />
+
+                    <TextView
+                        android:id="@+id/text_interim"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:fontFamily="@font/regular"
+                        android:paddingBottom="@dimen/fragment_translation_text_interim_paddingBottom"
+                        android:textColor="@color/interim_color"
+                        android:textSize="36sp" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+            <!-- 현재 문자통역 내용 표시 영역 -->
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/text_interim_current_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_translation_text_interim_current_scroll_height"
+                android:background="@color/text_interim_current_background"
+                android:elevation="6dp"
+                android:padding="@dimen/fragment_translation_text_interim_current_scroll_padding"
+                android:translationY="-30dp"
+                android:translationZ="2dp"
+                android:visibility="gone"
+                app:layout_anchor="@id/bottomMenu"
+                app:layout_anchorGravity="top">
+
+                <TextView
+                    android:id="@+id/text_interim_current"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="top|fill"
+                    android:clickable="true"
+                    android:fontFamily="@font/regular"
+                    android:textColor="@color/black"
+                    android:textSize="24sp" />
+
+            </androidx.core.widget.NestedScrollView>
+
+            <!-- 스크롤 다운 버튼 -->
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/btn_scroll_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/fragment_translation_btn_scroll_down_marginEnd"
+                android:scaleX="0.0"
+                android:scaleY="0.0"
+                android:src="@drawable/ic_scroll_down"
+                android:translationY="-40dp"
+                app:backgroundTint="@color/scroll_down_tint_color"
+                app:fabSize="mini"
+                app:layout_anchor="@id/bottomMenu"
+                app:layout_anchorGravity="top|end"
+                app:rippleColor="#4780c2"
+                app:tint="@color/colorPrimary" />
+
+            <View
+                android:id="@+id/blur_view"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@drawable/blur_background"
+                android:translationY="-2dp"
+                app:layout_anchor="@id/bottomMenu"
+                app:layout_anchorGravity="top"/>
+
+            <!-- 하단 메뉴 -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottomMenu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/fragment_translation_bottomMenu_height"
+                android:background="@color/colorPrimary"
+                app:behavior_hideable="true"
+                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+                <ImageButton
+                    android:id="@+id/btn_translate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_translation_btn_translate_marginTop"
+                    android:background="@drawable/btn_translation_selector"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:background="@drawable/btn_translation_selector" />
+
+<!--                &lt;!&ndash; 설정 버튼 &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/btn_setting"-->
+<!--                    android:layout_width="@dimen/main_fragment_bottom_menu__btn_width"-->
+<!--                    android:layout_height="@dimen/main_fragment_bottom_menu__btn_height"-->
+<!--                    android:layout_marginStart="@dimen/fragment_translation_btn_marginStart"-->
+<!--                    android:background="#00000000"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/btn_setting_selector"-->
+<!--                    app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--                &lt;!&ndash; 지우기 버튼 &ndash;&gt;-->
+<!--                <ImageButton-->
+<!--                    android:id="@+id/btn_erase"-->
+<!--                    android:layout_width="@dimen/main_fragment_bottom_menu__btn_width"-->
+<!--                    android:layout_height="@dimen/main_fragment_bottom_menu__btn_height"-->
+<!--                    android:layout_marginStart="25dp"-->
+<!--                    android:background="#00000000"-->
+<!--                    android:scaleType="centerCrop"-->
+<!--                    android:src="@drawable/btn_erase_selector"-->
+<!--                    app:layout_constraintStart_toEndOf="@+id/btn_booster"-->
+<!--                    app:layout_constraintTop_toTopOf="@+id/btn_booster" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

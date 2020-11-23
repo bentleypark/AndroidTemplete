@@ -1,0 +1,9 @@
+<!--
+  ~ COPYRIGHT © SOVORO 2020 ALL RIGHTS RESERVED
+  -->
+
+<vector android:height="50dp" android:viewportHeight="100"
+    android:viewportWidth="100" android:width="50dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#4285F4" android:fillType="evenOdd" android:pathData="M50,50m-50,0a50,50 0,1 1,100 0a50,50 0,1 1,-100 0"/>
+    <path android:fillColor="#FFF" android:fillType="evenOdd" android:pathData="M50,20c1.657,0 3,1.343 3,3v54c0,1.657 -1.343,3 -3,3s-3,-1.343 -3,-3L47,23c0,-1.657 1.343,-3 3,-3zM62,30c1.657,0 3,1.343 3,3v34c0,1.657 -1.343,3 -3,3s-3,-1.343 -3,-3L59,33c0,-1.657 1.343,-3 3,-3zM38,30c1.657,0 3,1.343 3,3v34c0,1.657 -1.343,3 -3,3s-3,-1.343 -3,-3L35,33c0,-1.657 1.343,-3 3,-3zM74,40c1.657,0 3,1.343 3,3v14c0,1.657 -1.343,3 -3,3s-3,-1.343 -3,-3L71,43c0,-1.657 1.343,-3 3,-3zM26,40c1.657,0 3,1.343 3,3v14c0,1.657 -1.343,3 -3,3s-3,-1.343 -3,-3L23,43c0,-1.657 1.343,-3 3,-3z"/>
+</vector>

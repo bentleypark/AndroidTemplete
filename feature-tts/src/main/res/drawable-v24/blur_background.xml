@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ COPYRIGHT © SOVORO 2020 ALL RIGHTS RESERVED
+  -->
+
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <gradient
+        android:endColor="@color/mainViewBackgroundColor"
+        android:centerColor="#61000000"
+        android:startColor="@android:color/transparent"
+        android:centerY="0.2"
+        android:angle="-90"/>
+
+</shape>

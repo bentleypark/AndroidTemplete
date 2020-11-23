@@ -15,19 +15,19 @@ constructor(
 //    private val cacheMapper: CacheMapper,
     private val networkMapper: NetworkMapper
 ) {
-    suspend fun getBlogs(): Flow<DataState<List<Blog>>> = flow {
-        emit(DataState.Loading)
-        delay(1000)
-        try {
-            val networkBlogs = apiService.get()
-            val blogs = networkMapper.mapFromEntityList(networkBlogs)
-//            for (blog in blogs) {
-//                blogDao.insert(cacheMapper.mapToEntity(blog))
-//            }
-//            val cachedBlogs = blogDao.get()
-            emit(DataState.Success(blogs))
-        } catch (e: Exception) {
-            emit(DataState.Error(e))
-        }
-    }
+//    suspend fun getBlogs(): Flow<DataState<List<Blog>>> = flow {
+//        emit(DataState.Loading)
+//        delay(1000)
+//        try {
+//            val networkBlogs = apiService.get()
+//            val blogs = networkMapper.mapFromEntityList(networkBlogs)
+////            for (blog in blogs) {
+////                blogDao.insert(cacheMapper.mapToEntity(blog))
+////            }
+////            val cachedBlogs = blogDao.get()
+//            emit(DataState.Success(blogs))
+//        } catch (e: Exception) {
+//            emit(DataState.Error(e))
+//        }
+//    }
 }
