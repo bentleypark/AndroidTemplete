@@ -13,7 +13,7 @@ object Versions {
     const val detektGradleVersion = "1.12.0"
 
     // Kotlin
-    const val kotlinVersion = "1.4.10"
+    const val kotlinVersion = "1.4.20"
 
     // Coroutines
     const val androidVersion = "1.4.1"
@@ -105,5 +105,5 @@ object Versions {
     const val klintVersion = "0.39.0"
 
     // Koin
-    const val koinVersion = "2.2.0"
+    const val koinVersion = "2.2.1"
 }
