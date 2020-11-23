@@ -47,6 +47,8 @@ dependencies {
 
     // Debug
     implementation Libs.timber
+
+    implementation project(Modules.commonUi)
 }
 
 def isNonStable = { String version ->

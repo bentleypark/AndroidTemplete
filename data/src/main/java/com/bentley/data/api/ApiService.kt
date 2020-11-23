@@ -16,11 +16,11 @@ interface ApiService {
 
     @FormUrlEncoded
     @POST("tts-premium/v1/tts")
-    fun requestTTS(
+    suspend fun requestTTS(
         @Field("speaker") speaker: String,
         @Field("text") text: String,
 //        @Field("speed") speed: Int,
 //        @Field("volume") volume: Int,
 //        @Field("pitch") pitch: Int,
-    ): Call<ResponseBody>
+    ): Response<ResponseBody>
 }

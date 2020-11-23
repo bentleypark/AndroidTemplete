@@ -8,7 +8,7 @@ import timber.log.Timber
 
 class TTSViewModel(private val mainRepository: MainRepository) : ViewModel() {
 
-    fun requestTTS() {
+    suspend fun requestTTS() {
         Timber.d("requestTTS")
         viewModelScope.launch {
            mainRepository.requestTTS("test")

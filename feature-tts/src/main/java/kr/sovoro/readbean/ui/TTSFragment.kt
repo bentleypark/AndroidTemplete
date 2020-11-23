@@ -15,8 +15,10 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.LifecycleOwner
+import androidx.lifecycle.lifecycleScope
 import com.bentley.common.base.ViewBindingHolder
 import com.bentley.common.base.ViewBindingHolderImpl
+import kotlinx.coroutines.launch
 import kr.sovoro.readbean.databinding.FragmentSttBinding
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import timber.log.Timber
@@ -78,7 +80,9 @@ class TTSFragment : Fragment(),
 //            observer.speechRecognizer.startListening(createIntent(requireContext()))
 //        }
 
-        viewModel.requestTTS()
+        lifecycleScope.launch {
+            viewModel.requestTTS()
+        }
     }
 
     private fun createIntent(context: Context): Intent {
